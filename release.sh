@@ -35,7 +35,8 @@ echo "Import the GPG key"
 export GPG_TTY=$(tty)
 echo "$GPG_KEY" | base64 -d > private.key
 gpg --batch --import ./private.key
-chmod -R 700 ~/.gnupg/
+chmod -R 777 ~/.gnupg/
+ls -ahl ~/.gnupg/
 rm ./private.key
 
 echo "Override the java home as gitactions is seting up the JAVA_HOME env variable"

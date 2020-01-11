@@ -33,7 +33,7 @@ git config --global user.email "$GIT_RELEASE_BOT_EMAIL";
 # Setup GPG
 echo "Import the GPG key"
 export GPG_TTY=$(tty)
-echo  ${{ GITHUB_GPG_KEY }} | base64 -d > private.key
+echo  ${{ GPG_KEY }} | base64 -d > private.key
 gpg --batch --import ./private.key
 rm ./private.key
 

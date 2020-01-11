@@ -1,6 +1,6 @@
 # action.yml
-name: 'Maven release'
-author: https://github.com/qcastel
+name: 'Maven release (fork)'
+author: https://github.com/MiniDigger
 description: 'Release your java application'
 branding:
   color: blue
